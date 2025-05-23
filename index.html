@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Услуги маркетолога</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <header class="p-4 flex justify-between items-center border-b">
+    <h1 class="text-xl font-bold">Маркетолог для бизнеса</h1>
+    <div>
+      <select id="languageSwitcher" class="border rounded p-1">
+        <option value="ru">RU</option>
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="p-6 space-y-6">
+    <section>
+      <h2 class="text-2xl font-semibold" data-i18n="main_heading">Ваш рост — моя работа</h2>
+      <p data-i18n="main_description">Я помогаю бизнесу расти с помощью цифрового маркетинга.</p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <a href="services/landing.html" class="block p-4 border rounded hover:shadow" data-i18n="service_landing">Создание лендинга</a>
+      <a href="services/ga4.html" class="block p-4 border rounded hover:shadow" data-i18n="service_ga4">Настройка GA4 / Метрики</a>
+      <a href="services/seo.html" class="block p-4 border rounded hover:shadow" data-i18n="service_seo">SEO продвижение</a>
+      <a href="services/yandex.html" class="block p-4 border rounded hover:shadow" data-i18n="service_yandex">Настройка Яндекс Директ</a>
+    </section>
+
+    <div class="flex space-x-4">
+      <a href="assets/portfolio/portfolio.pdf" class="bg-blue-600 text-white px-4 py-2 rounded" download data-i18n="btn_portfolio">📄 Скачать портфолио</a>
+      <a href="contact.html" class="bg-green-600 text-white px-4 py-2 rounded" data-i18n="btn_contact">💬 Связаться</a>
+    </div>
+  </main>
+
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>
