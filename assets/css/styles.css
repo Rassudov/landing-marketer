@@ -95,13 +95,41 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
   text-align: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  margin-top: -40px;
+}
+
+.feature-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 168, 232, 0.05);
+}
+
+.feature-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 168, 232, 0.15);
 }
 
 .feature-item .icon {
-  font-size: 32px;
+  font-size: 36px;
   color: var(--color-primary);
   margin-bottom: 12px;
   display: block;
+}
+
+.feature-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #444;
 }
 
 footer {
