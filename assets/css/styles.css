@@ -1,0 +1,112 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --color-primary: #00A8E8;
+  --color-secondary: #F4F4F9;
+  --color-text: #1E1E1E;
+  --color-footer: #101010;
+  --color-accent: #FF6363;
+
+  --font-heading: 'Poppins', 'Inter', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+
+  --container-width: 1200px;
+  --section-padding-desktop: 80px;
+  --section-padding-mobile: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: var(--section-padding-desktop) 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 168, 232, 0.3);
+}
+
+.hero {
+  background-color: white;
+  text-align: center;
+  padding: var(--section-padding-desktop) 20px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+
+.feature-item .icon {
+  font-size: 32px;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  display: block;
+}
+
+footer {
+  background-color: var(--color-footer);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer .socials {
+  margin-top: 16px;
+}
+
+.cta {
+  background-color: white;
+  text-align: center;
+  padding: var(--section-padding-desktop) 20px;
+}
+
+.cta p:last-child {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: var(--section-padding-mobile) 0;
+  }
+}
+
+/* Анимации: появление блоков и счётчик чисел — подключаются через AOS.js и JS */
