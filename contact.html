@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Контакты</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 text-gray-800 bg-white">
+  <header class="mb-6">
+    <a href="index.html" class="text-blue-600 underline">← На главную</a>
+  </header>
+
+  <main class="max-w-xl mx-auto space-y-4">
+    <h1 class="text-2xl font-bold" data-i18n="contact_title">Свяжитесь со мной</h1>
+    
+    <form action="#" method="POST" class="space-y-4">
+      <input type="email" name="email" required placeholder="Email" class="w-full border p-2 rounded" />
+      <input type="text" name="telegram" placeholder="Telegram" class="w-full border p-2 rounded" />
+      <textarea name="message" required placeholder="Ваше сообщение" rows="5" class="w-full border p-2 rounded"></textarea>
+      <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded" data-i18n="send_button">Отправить</button>
+    </form>
+  </main>
+
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>
