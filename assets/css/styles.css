@@ -93,20 +93,18 @@ h1, h2, h3, h4, h5, h6 {
 .features {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 20px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   padding: 40px;
   margin-top: -40px;
-  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .feature-item {
-  flex: 1;
-  min-width: 200px;
-  max-width: 240px;
+  flex: 1 1 0;
+  max-width: none;
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
@@ -159,6 +157,16 @@ footer .socials {
   font-weight: bold;
 }
 
+@media (max-width: 1024px) {
+  .features {
+    flex-wrap: wrap;
+  }
+  .feature-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
 @media (max-width: 768px) {
   section {
     padding: var(--section-padding-mobile) 0;
@@ -171,5 +179,10 @@ footer .socials {
 
   .hero-image img {
     margin: 0 auto;
+  }
+
+  .feature-item {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
