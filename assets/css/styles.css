@@ -91,21 +91,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   padding: 40px;
   margin-top: -40px;
+  flex-direction: row;
 }
 
 .feature-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 240px;
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 168, 232, 0.05);
 }
