@@ -73,14 +73,20 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+}
+
 .hero-image img {
-  max-width: 320px;
   width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
 .hero-content {
-  flex: 1;
+  flex: 2;
   min-width: 280px;
 }
 
@@ -134,5 +140,3 @@ footer .socials {
     margin: 0 auto;
   }
 }
-
-/* Анимации: появление блоков и счётчик чисел — подключаются через AOS.js и JS */
